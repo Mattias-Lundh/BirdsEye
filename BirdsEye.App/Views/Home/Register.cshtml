@@ -1,0 +1,38 @@
+﻿@model BirdsEye.App.Models.RegisterUser
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+<html>
+<head>
+    <title> Transparent Registration Form </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="registration-box box">
+        <img src="~/Art/avatar.png" class="avatar">
+        <h1>Register</h1>
+
+        @using (Html.BeginForm("RegisterUserGo", "Home", FormMethod.Post))
+        {
+            <p> First Name </p>
+            @Html.TextBoxFor(m => m.FirstName, new { @placeholder = "First Name" })
+            <p> Last Name </p>
+            @Html.TextBoxFor(m => m.LastName, new { @placeholder = "Last Name" })
+            <p> Email Address <font color="red"> *</font> </p>
+            @Html.ValidationMessageFor(p => p.EmailAddress)
+            @Html.TextBoxFor(m => m.EmailAddress, new { @placeholder = "Enter Email Address" })
+            <p> Password <font color="red"> *</font> </p>
+            @Html.ValidationMessageFor(p => p.Password)
+            @Html.PasswordFor(m => m.Password, new { @placeholder = "Enter Password" })
+            <p> Confirm Password <font color="red"> *</font> </p>
+            @Html.ValidationMessageFor(p => p.ConfirmPassword)
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @placeholder = "Confirm Password" })
+            <input type="submit" value="Register" />
+        }
+
+    </div>
+</body>
+</html>
