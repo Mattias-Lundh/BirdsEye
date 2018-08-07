@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace BirdsEye.Domain.Models
 {
-    public class ItemNotes
+    public class WorkNote
     {
         public int Id { get; set; }
+        public int AuthorId { get; set; }
         public string Text { get; set; }
     }
 }
