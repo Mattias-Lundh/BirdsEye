@@ -22,6 +22,24 @@ namespace BirdsEye.App.Controllers
             return View();
         }
 
+        public ActionResult LoginGo(LogIn logIn)
+        {
+            if (ModelState.IsValid)
+            {
+                DatabaseAccess database = new DatabaseAccess();
+                User user = database.GetUserByEmailAddress(logIn.EmailAddress);
+                if(user.Password == logIn.Password)
+                {
+                    Session["EmailAddress"] = user.EmailAddress;
+                    Session["id"] = user.Id;
+                    return RedirectToAction("index","Account");
+                }
+                return View();
+            }
+            return View();
+         //   return View("Register", user);
+        }
+
         public ActionResult Register()
         {
             RegisterUser model = new RegisterUser();
