@@ -10,7 +10,7 @@ namespace BirdsEye.Domain.Models
     {
         public int Id { get; set; }
         public string Value { get; set; }
-        public List<InventoryItemStatus> InventoryItemStatuses { get; set; }
+        public List<InventoryItemStatus> InventoryItemStatus { get; set; }
     }
 }
 

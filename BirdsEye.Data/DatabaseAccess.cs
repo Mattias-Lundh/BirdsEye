@@ -1,6 +1,9 @@
 ﻿using System;
 using BirdsEye.Domain.Models;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+
+
 
 namespace BirdsEye.Data
 {
@@ -31,5 +34,20 @@ namespace BirdsEye.Data
             }
         }
 
+        // Example code: fetch while including link table data.
+        /*
+
+        public User GetUserByIdDeleteME(int id)
+        {
+            using (DatabaseContext context = new DatabaseContext())
+            {
+                return context.Users
+                    .Where(u => u.Id == id)
+                    .Include(u => u.JobUsers)
+                        .ThenInclude(j => j.Job)
+                    .FirstOrDefault();
+            }
+        }
+        */
     }
 }
