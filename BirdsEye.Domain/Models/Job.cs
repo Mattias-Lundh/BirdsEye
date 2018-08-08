@@ -16,8 +16,7 @@ namespace BirdsEye.Domain.Models
         public string DueDate { get; set; }
         public string Location { get; set; }
         public List<Inventory> Inventory { get; set; }
-        public List<JobUser> JobUsers { get; set; }
-        public List<WorkNote> WorkNotes { get; set; }
-
+        public List<JobToUser> JobToUser { get; set; }
+        public List<JobNotes> JobNotes { get; set; }
     }
 }

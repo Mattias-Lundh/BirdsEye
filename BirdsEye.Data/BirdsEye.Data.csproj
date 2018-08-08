@@ -129,6 +129,10 @@
     <Compile Include="Migrations\20180802205629_init.designer.cs">
       <DependentUpon>20180802205629_init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20180808205510_JobsAndInventory.cs" />
+    <Compile Include="Migrations\20180808205510_JobsAndInventory.designer.cs">
+      <DependentUpon>20180808205510_JobsAndInventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\DatabaseContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

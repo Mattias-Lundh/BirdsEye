@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BirdsEye.Domain.Models
 {
-    public class ItemStatus
+    public class InventoryStatus
     {
         public int Id { get; set; }
         public string Value { get; set; }
-        public List<InventoryItemStatus> InventoryItemStatus { get; set; }
+        public List<InventoryToInventoryStatus> InventoryToInventoryStatus { get; set; }
     }
 }
 

@@ -12,7 +12,8 @@ namespace BirdsEye.Domain.Models
         public string ItemCatagory { get; set; }
         public string ItemName { get; set; }
         public string ItemCode { get; set; }
-        public List<InventoryItemStatus> InventoryItemStatus { get; set; }
-        public List<ItemNote> ItemNotes { get; set; }
+        public List<InventoryToInventoryStatus> InventoryToInventoryStatus { get; set; }
+        public List<InventoryNotes> InventoryNotes { get; set; }
+        public User User { get; set; }
     }
 }

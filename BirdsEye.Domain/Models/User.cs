@@ -14,6 +14,7 @@ namespace BirdsEye.Domain.Models
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
         public string Password { get; set; }
-        public List<JobUser> JobUsers { get; set; }
+        public List<JobToUser> JobToUsers { get; set; }
+        public List<Inventory> Inventories { get; set; }
     }
 }

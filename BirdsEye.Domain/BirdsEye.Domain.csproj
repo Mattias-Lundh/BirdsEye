@@ -41,13 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Inventory.cs" />
-    <Compile Include="Models\InventoryItemStatus.cs" />
-    <Compile Include="Models\ItemStatus.cs" />
+    <Compile Include="Models\InventoryToInventoryStatus.cs" />
+    <Compile Include="Models\InventoryStatus.cs" />
     <Compile Include="Models\Job.cs" />
-    <Compile Include="Models\JobUser.cs" />
-    <Compile Include="Models\ItemNote.cs" />
+    <Compile Include="Models\JobToUser.cs" />
+    <Compile Include="Models\InventoryNotes.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="Models\WorkNote.cs" />
+    <Compile Include="Models\JobNotes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

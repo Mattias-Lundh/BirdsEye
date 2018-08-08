@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BirdsEye.Domain.Models
 {
-    public class JobUser
+    public class JobNotes
     {
-        public int JobId { get; set; }
+        public int Id { get; set; }
+        public int AuthorId { get; set; }
+        public string Text { get; set; }
         public Job Job { get; set; }
-        public int UserId { get; set; }
-        public User User { get; set; }
     }
 }
