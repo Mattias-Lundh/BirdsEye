@@ -36,6 +36,10 @@ namespace BirdsEye.App.Controllers
             myProfile.EmailAddress = user.EmailAddress;
             return View(myProfile);
         }
+        public ActionResult ViewJobs()
+        {
+            return
+        }
 
     }
 }

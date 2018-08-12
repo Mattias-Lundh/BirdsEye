@@ -16,5 +16,6 @@ namespace BirdsEye.Domain.Models
         public string Password { get; set; }
         public List<JobToUser> JobToUsers { get; set; }
         public List<Inventory> Inventories { get; set; }
+        public List<Group> Groups { get; set; }
     }
 }

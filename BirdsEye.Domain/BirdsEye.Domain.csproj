@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Group.cs" />
     <Compile Include="Models\Inventory.cs" />
     <Compile Include="Models\InventoryToInventoryStatus.cs" />
     <Compile Include="Models\InventoryStatus.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="Models\InventoryNotes.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\JobNotes.cs" />
+    <Compile Include="Models\UserToGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

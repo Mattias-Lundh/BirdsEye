@@ -9,6 +9,7 @@ namespace BirdsEye.Data
 {
     public class DatabaseAccess
     {
+        #region User
         public void AddUser(User user)
         {
             using (DatabaseContext context = new DatabaseContext())
@@ -33,6 +34,21 @@ namespace BirdsEye.Data
                 return context.Users.Where(u => u.Id == id).FirstOrDefault();
             }
         }
+        #endregion
+
+        #region Inventory
+
+
+        #endregion
+
+        #region Jobs
+
+
+        #endregion
+
+        #region MixedSearchBetterName
+
+        #endregion
 
         // Example code: fetch while including link table data.
         /*
@@ -49,5 +65,6 @@ namespace BirdsEye.Data
             }
         }
         */
+
     }
 }
