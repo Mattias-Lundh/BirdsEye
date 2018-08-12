@@ -38,7 +38,7 @@ namespace BirdsEye.App.Controllers
         }
         public ActionResult ViewJobs()
         {
-            return
+            return null; // return to do something here
         }
 
     }
